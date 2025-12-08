@@ -1,127 +1,39 @@
-# <img src="./images/icon.png" alt="Meta-Scraper Logo" width="30"/> Meta-Scraper: Image Metadata Cleaner
+# <img src="./images/icon.png" alt="Meta-Scraper Logo" width="30" /> Meta-Scraper: Image Metadata Cleaner
 
-[![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=natalie-a-1.metascraper)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/NatalieHill.metascraper)](https://marketplace.visualstudio.com/items?itemName=NatalieHill.metascraper)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Downloads](https://img.shields.io/badge/downloads-0-orange.svg)](https://marketplace.visualstudio.com/items?itemName=natalie-a-1.metascraper)
 
-A powerful Visual Studio Code extension that protects your privacy by viewing and removing metadata from image files. Keep your sensitive information secure when sharing images!
+Meta-Scraper is a Visual Studio Code extension for inspecting and removing image metadata, helping you avoid leaking sensitive information when sharing images. It currently has **250+ installs** on the Visual Studio Code Marketplace.
 
----
+## Demo
 
-## 🎬 Demo Video
+![Demo](images/output.gif)
 
-  ![Demo](images/output.gif)
-  <p><i>Note: We apologize for the poor video quality. We're working on creating a better demonstration.</i></p>
+## Features
 
----
-
-## ✨ Features
-
-- **🔍 View Image Metadata** - Inspect all metadata embedded in your images
-- **🧹 Clean Image Metadata** - One-click removal of all sensitive information
-- **🖼️ Format Support** - Works with `.jpg`, `.jpeg`, `.png`, `.gif`, `.tiff`, `.webp`
-- **🚀 Fast Processing** - Efficient cleaning with real-time progress indicators
-- **🔒 Local Processing** - All operations happen locally, no data is sent to external servers
+- View metadata embedded in an image
+- Remove metadata in a single action
+- Supports `.jpg`, `.jpeg`, `.png`, `.gif`, `.tiff`, `.webp`
+- Fast processing with real-time feedback
+- All processing is done locally; no data leaves your machine
 
 <div align="center">
-  <p><b>Right-click on any image file to access Meta-Scraper functions</b></p>
+  <p><b>Right-click any image file in VS Code to access Meta-Scraper actions.</b></p>
 </div>
 
-## 🛡️ Why Cleaning Image Metadata Is Critical
+## Why Cleaning Image Metadata Matters
 
-Modern digital images contain a surprising amount of hidden metadata that could compromise your privacy:
+Modern image files can contain hidden metadata that exposes personal or sensitive details:
 
-| Metadata Type | Privacy Risk |
-|---------------|--------------|
-| **GPS Location** | Reveals exact coordinates where the photo was taken |
-| **Device Information** | Exposes your camera/phone model and unique identifiers |
-| **Creation Time** | Shows precisely when the photo was taken |
-| **Software Details** | Reveals what apps you use to edit photos |
-| **Author Info** | Can include your name, email, or other personal details |
+| Metadata Type      | Privacy Risk                                               |
+|--------------------|------------------------------------------------------------|
+| GPS location       | Reveals the exact place where the photo was taken         |
+| Device information | Exposes camera/phone model and unique identifiers         |
+| Creation time      | Shows precisely when the photo was taken                  |
+| Software details   | Reveals which tools were used to edit the image           |
+| Author information | Can include your name, email, or other personal details   |
 
-**Real-world consequences of uncleaned metadata:**
-- 🌎 Accidentally revealing your home location
-- 🔍 Leaking information during sensitive document sharing
-- 🔐 Exposing organizational details in professional contexts
-- ⏱️ Revealing timeline information that should remain private
+Examples of potential issues:
 
-Meta-Scraper protects you by completely removing this hidden data while preserving image quality.
-
----
-
-## 📋 Usage
-
-### Viewing Metadata
-
-<div style="display: flex; align-items: center;">
-  <div>
-    <ol>
-      <li>Right-click on an image file in VS Code Explorer</li>
-      <li>Select <b>"View Image Metadata"</b> from the context menu</li>
-      <li>A new document will open showing all metadata in JSON format</li>
-    </ol>
-  </div>
-</div>
-
-### Cleaning Metadata
-
-<div style="display: flex; align-items: center;">
-  <div>
-    <ol>
-      <li>Right-click on an image file in VS Code Explorer</li>
-      <li>Select <b>"Clean Image Metadata"</b> from the context menu</li>
-      <li>Wait for the cleaning process to complete</li>
-      <li>The image will be replaced with a metadata-free version</li>
-    </ol>
-  </div>
-</div>
-
----
-
-## 🔧 Requirements
-
-This extension uses ExifTool, which is automatically installed as a dependency. No additional software installation is required.
-
----
-
-## 📊 Extension Settings
-
-This extension is designed to be simple and does not require any configuration. Just install and use!
-
----
-
-## 🔄 Future Improvements
-
-- Autonomous metadata clearing for images without manual intervention
-- Option to save cleaned images as new files
-- Batch processing for multiple images
-- Selective metadata cleaning
-- Custom metadata templates
-
----
-
-## 🔒 Privacy Statement
-
-Meta-Scraper processes all images locally on your machine. No data is transmitted to external servers, maintaining complete privacy of your information.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit issues or pull requests on the [GitHub repository](https://github.com/natalie-a-1/Meta-Scraper).
-
----
-
-## 📜 License
-
-This extension is released under the [MIT License](LICENSE).
-
----
-
-<div align="center">
-  <p>Made with ❤️ by <a href="https://github.com/natalie-a-1">natalie-a-1</a></p>
-  <p>
-    <a href="https://github.com/natalie-a-1/Meta-Scraper/issues">Report Bug</a> •
-    <a href="https://github.com/natalie-a-1/Meta-Scraper/issues">Request Feature</a>
-  </p>
-</div>
+- Revealing your home or workplace location
+- Leaking details in screenshots or documents shared publicly
